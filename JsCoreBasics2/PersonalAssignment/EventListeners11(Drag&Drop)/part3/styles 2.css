@@ -1,0 +1,11 @@
+div{
+border: solid black 2px;
+height: 150px;
+margin: 50px;
+}
+div > h1{
+border: black solid 2px;
+}
+.drag-over{
+    opacity: .5;
+}

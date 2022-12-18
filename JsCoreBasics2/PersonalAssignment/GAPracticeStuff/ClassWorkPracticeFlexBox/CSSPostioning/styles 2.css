@@ -1,0 +1,33 @@
+body {
+	height: 200vh;
+    position: relative;
+}
+.parent {
+	position: relative;
+	font-size: 2em;
+	font-family: 'Courier New', Courier, monospace;
+	border: 1px solid black;
+	background-color: grey;
+	margin: 30px;
+	padding: 10px;
+}
+.child-one {
+	background-color: blue;
+	position: sticky;
+	top: 0;
+}
+.child-two {
+	background-color: red;
+}
+
+.child-three {
+	background-color: green;
+}
+p {
+	font-family: 'Courier New', Courier, monospace;
+	margin: 30px;
+	padding: 10px;
+	position: sticky;
+	margin: 30px;
+	padding: 10px;
+}

@@ -1,0 +1,37 @@
+body {
+    background: rgb(91, 106, 143);
+}
+
+.fill{
+ background-image: url('https://wallpapershome.com/images/pages/pic_h/173.jpg');
+ background-size: 150px 140px;
+ background-repeat: no-repeat ;
+ position: relative;
+ height: 150px;
+ width: 150px;
+ top: 5px;
+ left: 5px;
+ cursor: pointer;
+}
+
+.empty{
+    display: inline-block;
+    height: 150px;
+    width: 160px;
+    margin: 10px;
+    border:  5px rgba(28, 35, 55, 0.356) solid;
+    background-color: white;
+}
+
+.hold{
+    border: solid #ccc 4px;
+}
+
+.hovered{
+    background: #f4f4f4;
+    border-style: dashed;
+}
+
+.invisible {
+    display: none;
+}

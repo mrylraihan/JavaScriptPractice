@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form Practice</title>
+</head>
+<body>
+    <h1>Form Practice</h1>
+    <!-- action is where we want to submit our information -->
+    <!-- the enctype inst needed if we aren't using file uploads -->
+ <form action="results.html" method="GET" enctype="multipart/form-data">
+     <div>
+         <!-- in our label the for needs to match the id of our input -->
+         <!-- the for needs to be set the id of our input element -->
+         <label for="userName">UserName:</label>
+         <!-- the attribute value overrides the placeholder attr -->
+         <input type="text" name="userName" id="userName" placeholder="UserName" value="User" required>
+     </div>
+     <div>
+         <label for="passWord">Password:</label>
+         <!-- the attribute required forces user to submit a value in the field -->
+          <input type="password" name="passWord" id="passWord" placeholder="PassWord" required>
+     </div>
+     <div>
+         <label for="email">Email:</label>
+         <input type="email" name="email" id="email" placeholder="Email" required>
+     </div>
+     <div>
+         <!-- you can use validations in your age input -->
+         <label for="age">Age:</label>
+         <input type="number" name="age" id="age" min="1"
+         max="101" step="1" required>
+     </div>
+     <div>
+         <label for="date">Date:</label>
+         <input type="date" name="date" id="date" required>
+     </div>
+     <div>
+         <label for="time">Time:</label>
+         <input type="time" name="time" id="time" required>
+     </div>
+     <div>
+         <label for="phone">Phone:</label>
+         <input type="tel" name="phone" id="phone" placeholder="000-000-0000" required>
+     </div>
+     <div>
+         <label for="url">URL:</label>
+         <input type="url" name="url" id="url" placeholder="Enter Web Address" required>
+     </div>
+     <div>
+         <!-- for radio buttons you need to make sure the name attribute is the same so that the radio functionality works -->
+         <h4>Our favorite fruit</h4> 
+         <div>
+             <!-- the attr checked give u a defaulted checked box -->
+             <input type="radio" name="favFruit" id="apple" value="apple" checked>
+             <label for="apple">Apple:</label>
+         </div>
+         <div>
+             <input type="radio" name="favFruit" id="bananna" value="bananna">
+             <label for="bananna">Bananna:</label>
+         </div>
+         <div>
+             <input type="radio" name="favFruit" id="grapes" value="grapes">
+             <label for="grapes">Grapes:</label>
+         </div>
+     </div>
+     <div>
+         <!-- in our radio buttons we also need to add a value attr for our form we know what we are getting back   -->
+         <h4>Gender</h4>
+         <div>
+             <label for="male">Male</label>
+             <input type="radio" name="gender" id="male" value="male" >
+             <label for="female">Female</label>
+             <input type="radio" name="gender" id="female" value="female">
+         </div>
+     </div>
+     <!-- check boxes checked works the same way -->
+     <div>
+         <input type="checkbox" name="day" value="Friday" checked> Friday
+         <input type="checkbox" name="day" value="Saturday"> Saturday
+         <input type="checkbox" name="day" value="Sunday"> Sunday
+     </div>
+     <div>
+         <div>
+             <label for="comments">Comments:</label>
+        </div>
+        <div>
+            <textarea name="comments" id="comments" cols="30" rows="5" placeholder="enter your comments"></textarea>
+        </div>
+        </div>
+        <!-- using the select tag as a input they work very similar and will submit through our form, the selected attr in our options work teh same way checked does for the checkbox -->
+        <div>
+            <label for="eyeColor">Eye Color</label>
+            <select name="eyeColor" id="eyeColor">
+                <option value="green" selected>Green</option>
+                <option value="red">Red</option>
+            </select>
+        </div>
+        <!-- you can label the selections in the label attr -->
+        <div>
+            <label for="eyesColor">Eye Color</label>
+            <select name="eyesColor" id="eyesColor">
+                <option label="brown" value="brown"></option>
+                <option label="blue" value="blue"></option>
+                <option label="black" value="black"></option>
+            </select>
+        </div>
+        <div>
+            <label for="eC">Eye Color select multi</label>
+            <select name="eC" id="eC" multiple>
+                <option label="brown" value="brown"></option>
+                <option label="blue" value="blue"></option>
+                <option label="black" value="black"></option>
+            </select>
+        </div>
+
+        <!-- the hidden input doesn't show up on the page and user can inter attack with it  -->
+        <input type="hidden" name="hidden" value="homepage">
+        <!-- for files we need to specify in our form that the enctype is in multipart/form-data so our file can be useful-->
+        <div>
+            <label for="file">File:</label>
+            <input type="file" name="file" id="file">
+        </div>
+
+        <div>
+            <label for="color">ColorSelector:</label>
+            <input type="color" name="color" id="color">
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>User Name Login</legend>
+                <label for="uN">Username</label>
+                <input type="text" name="uN" id="uN">
+                <label for="ps">Password</label>
+                <input type="password" name="ps" id="ps">
+            </fieldset>
+        </div>
+
+     <input type="submit">
+     <input type="submit" name="submit" value="Send">
+     <button>Submit button</button>
+     <button name="submit">
+         <strong>Send Us</strong> a Message
+    </button>
+
+
+ </form>
+</body>
+</html>

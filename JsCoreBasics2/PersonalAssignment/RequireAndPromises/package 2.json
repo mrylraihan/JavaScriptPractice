@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "knuth-shuffle": "^1.0.8"
+  }
+}

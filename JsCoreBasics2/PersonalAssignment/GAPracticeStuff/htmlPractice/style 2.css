@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Delius+Unicase');
+
+body {
+  background: #f0fff0;
+  color: #133924;
+  margin: 0;
+}
+section {
+  border-bottom: 2px dotted;
+  padding: 2rem 0;
+}
+
+html{
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 1em;
+}
+h1, h2, h3{
+  font-family: 'Delius Unicase', sans-serif;
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 1em;
+}
+p{
+    margin: 1em;
+}
+
+main {
+
+  margin: 2rem;
+}
+
+.food-img {
+  /* At most, take up 300px of width and height */
+  max-width: 300px;
+  max-height: 300px;
+
+  /* Add 10px of invisible spacing around each food image. */
+  margin: 10px;
+  /* Verically align our image in the middle of its current line. (NOTE: vertical-align only works with inline elements)  */
+  vertical-align: middle;
+  /* Try to take up as much width as the `max-width` will allow. Up to 300px. This helps support very thin phone screens. */
+  width: 100%;
+}
+
+footer {
+  /* Give the footer a background color. Note: this time we used `background-color` instead of `background`. Either is fine. */
+  background-color:#133924;
+  color: #f0fff0;
+  /* Add padding (visible spacing) around the footer. We use padding instead of margin, so the spacing will be green, too */
+  padding: 2rem;
+}

@@ -1,0 +1,38 @@
+body{
+    align-items: center;
+}
+.container{
+   /* border: 1px solid black; */
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    max-width: 600px;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.h1{
+    width:500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.box{
+    border:1px solid black;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+button{
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}

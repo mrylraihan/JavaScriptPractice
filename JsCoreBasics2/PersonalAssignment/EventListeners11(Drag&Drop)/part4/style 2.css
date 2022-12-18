@@ -1,0 +1,22 @@
+body{
+    background-image: url('https://media1.giphy.com/media/3o7bu5O1zeaXvhi4ve/giphy.gif?cid=ecf05e47zpcvxwg3rierucvpzqd6o4d0qnoa65ze20ekkc87&rid=giphy.gif&ct=g');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: xx-large;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+
+}
+
+.hishamsZone{
+    height: 100px;
+    width: 100px;
+    border: black solid 5px;
+    display: flex;
+    align-items: center;
+}
